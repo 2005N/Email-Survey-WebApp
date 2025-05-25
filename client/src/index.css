@@ -1,0 +1,56 @@
+/* DARK MODE BASE */
+body.dark-mode {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+body.dark-mode nav {
+  background-color: #444444 !important;
+}
+
+/* CARDS AND CONTAINERS */
+body.dark-mode .card,
+body.dark-mode .container {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+}
+
+/* TEXT INPUTS + TEXTAREAS */
+body.dark-mode .input-field input,
+body.dark-mode .input-field textarea,
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"],
+body.dark-mode textarea,
+body.dark-mode .validate {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+}
+
+/* PLACEHOLDER TEXT */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder,
+body.dark-mode ::placeholder {
+  color: #cccccc !important;
+}
+
+/* INPUT FOCUS EFFECTS */
+body.dark-mode .input-field input:focus,
+body.dark-mode .input-field textarea:focus {
+  border-bottom: 1px solid #90caf9 !important;
+  box-shadow: 0 1px 0 0 #90caf9 !important;
+  color: #ffffff !important;
+}
+
+/* FLOATING LABELS */
+body.dark-mode .input-field label,
+body.dark-mode .input-field label.active,
+body.dark-mode label {
+  color: #90caf9 !important;
+}
+
+/* LINKS */
+body.dark-mode a {
+  color: #90caf9 !important;
+}

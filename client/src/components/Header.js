@@ -18,6 +18,15 @@ class Header extends Component{
             default:
                 return [
                     <li key="1"><Payments/></li>,
+                    <li key="dark-mode">
+                        <button
+                            onClick={this.props.toggleDarkMode}
+                            className="btn-flat white-text"
+                            style={{ margin: '15px 10px', display: 'flex', alignItems: 'center'}}
+                        >
+                            <i className="material-icons">brightness_6</i>
+                        </button>
+                    </li>,
                     <li key="3" style={{margin: '0 10px'}}>
                         Credits: {this.props.auth.credits}
                     </li>,
