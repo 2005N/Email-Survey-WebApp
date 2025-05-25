@@ -10,7 +10,10 @@ class Header extends Component{
                 return ;
             case false:
                 return (
+                    <ul>
                     <li><a href="/auth/google">Login With Google</a></li>
+                    <li><a href="/auth/github">Login With GitHub</a></li>
+                    </ul>
                 );
             default:
                 return [

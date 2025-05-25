@@ -1,5 +1,6 @@
 const passport=require('passport')
 const GoogleStrategy=require('passport-google-oauth20').Strategy
+const GitHubStrategy=require('passport-github').Strategy
 const keys=require('../config/keys')
 const mongoose=require('mongoose')
 
@@ -31,3 +32,22 @@ passport.use(new GoogleStrategy({
     done(null, user);
     
 }))
+
+passport.use(
+    new GitHubStrategy(
+        {
+            clientID: keys.githubClientID,
+            clientSecret: keys.githubClientSecret,
+            callbackURL: 'auth/google/callback',
+            proxy: true
+        },
+        async (accessToken,refreshToken,profile,done)=>{
+            const existingUser= await User.findOne({ githubId: profile.id });
+            if(existingUser){
+                return done(null,existingUser);
+            }
+            const user=await new User({githubId: profile.id}).save();
+            done(null, user);
+        }
+    )
+)

@@ -16,6 +16,19 @@ module.exports = (app) => {
         }
     );
 
+    app.get(
+        '/auth/github',
+        passport.authenticate('github', { scope: ['user:email']})
+    );
+
+    app.get(
+        '/auth/github/callback',
+        passport.authenticate('github'),
+        (req,res) => {
+            res.redirect('/surveys');
+        }
+    );
+
     app.get('/api/logout', (req,res) => {
         req.logout();
         res.redirect('/');
