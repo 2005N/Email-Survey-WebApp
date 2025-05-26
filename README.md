@@ -11,13 +11,14 @@ Emaily is a full-stack web application that lets users create, manage, and send 
 
 ## ✨ Features
 
--  Google OAuth 2.0 authentication
+-  Google & GitHub OAuth 2.0 authentication
 -  Create and send email surveys
 -  Collect feedback from recipients via embedded survey links
 -  Track number of responses (Yes/No)
 -  Stripe-based credits system for sending emails
 -  Hosted on Render with MongoDB Atlas backend
 -  Session management with cookie-based auth
+-  Optional Dark Mode
 
 <br/>
 
@@ -65,7 +66,7 @@ cd ..
 - Create a dev.js file in the config folder:
   ```bash
   module.exports = {
-    googleClientID : your_id_here,
+    googleClientID: your_id_here,
     googleClientSecret: your_secret,
     mongoURI: your_mongo_uri,
     cookieKey: random_secure_string,
@@ -73,7 +74,7 @@ cd ..
     stripeSecretKey: your_secret_key,
     sendGridKey: your_key,
     redirectDomain: 'http://localhost:3000'
-};```
+  };```
 
 #### Run the app
 ```bash
