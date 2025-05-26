@@ -74,7 +74,8 @@ cd ..
     stripeSecretKey: your_secret_key,
     sendGridKey: your_key,
     redirectDomain: 'http://localhost:3000'
-  };```
+  }
+  ```
 
 #### Run the app
 ```bash
