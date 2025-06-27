@@ -1,6 +1,7 @@
-#  Emaily – Email Campaign Web App
+#  Email Campaign Web App
 
-Emaily is a full-stack web application that lets users create, manage, and send email surveys to recipients. Designed for marketing teams and small businesses, it supports OAuth login, tracks responses, and provides a user-friendly interface for email-based campaigns.
+A full-stack web application that lets users create, manage, and send email surveys to recipients. 
+Designed for marketing teams and small businesses, it supports OAuth login, tracks responses, and provides a user-friendly interface for email-based campaigns.
 
 <br/>
 
