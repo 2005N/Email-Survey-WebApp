@@ -38,9 +38,6 @@ Designed for marketing teams and small businesses, it supports OAuth login, trac
 - SendGrid (Transactional Email Service)
 - Stripe API (Payments)
 
-<br/>
-
-## 📷 Screenshots
 
 
 <br/>
